@@ -1,73 +1,46 @@
-# React + TypeScript + Vite
+# ⚡ Energy Monitoring System - CV Atta Network
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistem **Cloud-Based Monitoring** untuk analisis konsumsi energi rumah tangga menggunakan dataset dari CV Atta Network. Dibangun dengan **Golang** pada sisi backend dan **React.js + TypeScript** pada sisi frontend.
 
-Currently, two official plugins are available:
+## 🚀 Fitur Utama
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📊 **Dashboard Interaktif** - Visualisasi konsumsi energi real-time dengan chart dan tabel
+- 📁 **Upload Dataset** - Import data Excel/CSV langsung ke database
+- 🏠 **Filter per Rumah** - Analisis konsumsi per kode rumah (RMH-01 s/d RMH-12)
+- 📈 **Grafik Real-time** - Line chart, bar chart, dan heatmap untuk analisis pola
+- 📤 **Ekspor Data** - Download data ke format CSV/Excel
+- 🔄 **Auto Refresh** - Data update setiap 10-30 detik
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
+- **Go** (Golang) - Bahasa pemrograman utama
+- **Gin Framework** - HTTP web framework
+- **GORM** - ORM untuk database
+- **PostgreSQL** - Database utama
+- **JWT** - Autentikasi (opsional)
 
-## Expanding the ESLint configuration
+### Frontend
+- **React 18** - Library UI
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Chart.js** - Visualisasi data
+- **Axios** - HTTP client
+- **React Router DOM** - Routing
+- **CSS Modules** - Styling
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📋 Prasyarat
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Sebelum menjalankan project ini, pastikan Anda telah menginstall:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Go** (versi 1.19 atau lebih baru) - [Download](https://go.dev/dl/)
+- **Node.js** (versi 18 atau lebih baru) - [Download](https://nodejs.org/)
+- **PostgreSQL** (versi 14 atau lebih baru) - [Download](https://www.postgresql.org/download/)
+- **Git** (opsional) - [Download](https://git-scm.com/download/win)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔧 Instalasi
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 1. Clone Repository
+```bash
+git clone https://github.com/username/energy-monitoring-system.git
+cd energy-monitoring-system
