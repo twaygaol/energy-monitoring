@@ -1,6 +1,6 @@
-# ⚡ Energy Monitoring System - CV Atta Network
+# ⚡ Energy Monitoring System
 
-Sistem **Cloud-Based Monitoring** untuk analisis konsumsi energi rumah tangga menggunakan dataset dari CV Atta Network. Dibangun dengan **Golang** pada sisi backend dan **React.js + TypeScript** pada sisi frontend.
+Sistem **Cloud-Based Monitoring** untuk analisis konsumsi energi rumah tangga menggunakan dataset dari perusahaan tertentu. Dibangun dengan **Golang** pada sisi backend dan **React.js + TypeScript** pada sisi frontend.
 
 ## 🚀 Fitur Utama
 
