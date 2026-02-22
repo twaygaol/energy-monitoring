@@ -1,0 +1,143 @@
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.header {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.body {
+  padding: 14px;
+}
+
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.day {
+  font-family: 'DM Mono', monospace;
+  font-size: 7px;
+  color: var(--muted);
+  height: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 2px;
+  flex: 1;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cell {
+  height: 14px;
+  border-radius: 1px;
+  cursor: pointer;
+  position: relative;
+  transition: outline 0.1s;
+}
+
+.cell:hover {
+  outline: 1px solid var(--accent);
+  z-index: 10;
+}
+
+.hourLabels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+.hourLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 7px;
+  color: var(--muted);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.legendLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 7.5px;
+  color: var(--muted);
+}
+
+.swatch {
+  display: flex;
+  gap: 2px;
+  flex: 1;
+}
+
+.swatchItem {
+  flex: 1;
+  height: 6px;
+}
+
+.footer {
+  font-family: 'DM Mono', monospace;
+  font-size: 7px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.tooltip {
+  position: fixed;
+  background: var(--surface3);
+  border: 1px solid var(--border2);
+  padding: 5px 10px;
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  color: var(--text);
+  pointer-events: none;
+  z-index: 999;
+  white-space: nowrap;
+}

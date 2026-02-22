@@ -1,0 +1,114 @@
+.pageHeader {
+  padding: 18px 22px 0;
+  margin-bottom: 10px;
+}
+
+.pageHeader h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.pageHeader p {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.contentPad {
+  padding: 14px 22px 22px;
+}
+
+.filterBar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.filterButton {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  padding: 6px 12px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.filterButton:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filterButton.active {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.chartContainer {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.insightPanel {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.insightCard {
+  padding: 12px;
+  background: var(--surface);
+  border-radius: 6px;
+  border-left: 3px solid;
+}
+
+.insightCard.peak {
+  border-left-color: var(--danger);
+}
+
+.insightCard.average {
+  border-left-color: var(--accent);
+}
+
+.insightCard.trend {
+  border-left-color: var(--accent3);
+}
+
+.insightTitle {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.insightValue {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px;
+  color: var(--text);
+  font-style: italic;
+}
+
+.insightDesc {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 4px;
+}

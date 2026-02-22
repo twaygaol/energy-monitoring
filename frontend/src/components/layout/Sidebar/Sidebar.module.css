@@ -1,0 +1,107 @@
+.sidebar {
+  width: var(--sidebar);
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.navSectionLabel {
+  font-family: 'DM Mono', monospace;
+  font-size: 7.5px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  padding: 14px 16px 4px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 16px;
+  cursor: pointer;
+  font-size: 11.5px;
+  color: var(--muted);
+  transition: all 0.18s;
+  border-left: 2px solid transparent;
+}
+
+.navItem:hover {
+  color: var(--text);
+  background: var(--accent-dim);
+}
+
+.navItem.active {
+  color: var(--accent);
+  background: var(--accent-dim);
+  border-left-color: var(--accent);
+}
+
+.navItem .icon {
+  font-size: 13px;
+  width: 16px;
+  text-align: center;
+}
+
+.navDivider {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 14px;
+}
+
+.sidebarFooter {
+  margin-top: auto;
+  padding: 12px;
+  border-top: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+.serverStatus {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.statusDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent3);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.15;
+  }
+}
+
+.statusInfo {
+  color: var(--accent3);
+  font-size: 7.5px;
+  letter-spacing: 1px;
+}
+
+.statusSub {
+  color: var(--muted);
+  font-size: 7px;
+  margin-top: 1px;
+}

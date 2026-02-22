@@ -1,0 +1,49 @@
+.pageHeader {
+  padding: 18px 22px 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.pageHeader h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.pageHeader p {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.headerControls {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.contentPad {
+  padding: 14px 22px 22px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

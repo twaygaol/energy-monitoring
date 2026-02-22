@@ -1,0 +1,27 @@
+.pageHeader {
+  padding: 18px 22px 0;
+}
+
+.pageHeader h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+}
+
+.pageHeader p {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.contentPad {
+  padding: 14px 22px 22px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}

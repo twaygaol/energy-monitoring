@@ -1,0 +1,1 @@
+export { default, SimpleTooltip } from './tooltip';

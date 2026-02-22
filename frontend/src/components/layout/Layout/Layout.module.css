@@ -1,0 +1,38 @@
+/* Grid Background */
+.gridBg {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(rgba(0, 229, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 229, 255, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Body Wrap */
+.bodyWrap {
+  display: flex;
+  height: calc(100vh - 50px);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.15) transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 2px;
+}

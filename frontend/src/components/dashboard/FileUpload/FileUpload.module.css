@@ -1,0 +1,87 @@
+.uploadContainer {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.uploadContainer h3 {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.note {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  padding: 6px;
+  background: var(--surface3);
+  border-radius: 4px;
+}
+
+.uploadArea {
+  border: 2px dashed var(--border2);
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.fileInput {
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.fileInfo {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.uploadBtn {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 8px 16px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.uploadBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: var(--danger);
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background: var(--surface3);
+  border-radius: 4px;
+  text-align: left;
+}
+
+.result h4 {
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+.success {
+  color: var(--accent3);
+}
+
+.failed {
+  color: var(--danger);
+}

@@ -1,0 +1,61 @@
+.pageHeader {
+  padding: 18px 22px 0;
+  flex-shrink: 0;
+}
+
+.pageHeader h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.pageHeader p {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.contentPad {
+  padding: 14px 22px 22px;
+}
+
+.infoPanel {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.infoPanel h3 {
+  color: var(--accent);
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.infoPanel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.infoPanel li {
+  color: var(--muted);
+  font-size: 11px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infoPanel li::before {
+  content: '📌';
+  color: var(--accent);
+  font-size: 10px;
+}

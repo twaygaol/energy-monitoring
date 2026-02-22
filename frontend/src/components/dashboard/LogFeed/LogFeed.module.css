@@ -1,0 +1,104 @@
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.header {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 1.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.body {
+  padding: 14px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.15) transparent;
+}
+
+.feed::-webkit-scrollbar {
+  width: 3px;
+}
+
+.feed::-webkit-scrollbar-thumb {
+  background: var(--border2);
+}
+
+.entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 6px 9px;
+  background: var(--surface2);
+  border-left: 2px solid;
+}
+
+.entryInfo {
+  border-color: var(--accent);
+}
+
+.entryOk {
+  border-color: var(--accent3);
+}
+
+.entryWarn {
+  border-color: var(--warn);
+}
+
+.entryErr {
+  border-color: var(--danger);
+}
+
+.timestamp {
+  font-family: 'DM Mono', monospace;
+  font-size: 7.5px;
+  color: var(--muted);
+  white-space: nowrap;
+  padding-top: 1px;
+  flex-shrink: 0;
+}
+
+.message {
+  font-family: 'DM Mono', monospace;
+  font-size: 8.5px;
+  color: var(--muted);
+  letter-spacing: 0.4px;
+  line-height: 1.4;
+}
+
+.message b {
+  color: var(--text);
+  font-weight: 400;
+}
